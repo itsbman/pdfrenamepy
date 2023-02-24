@@ -16,5 +16,5 @@ if __name__ == "__main__":
         pdf_file = file_dir / file_name
         pdf_info = get_pdf_info(pdf_file)
         new_pdf_name = f"{pdf_info.title} ({pdf_info.year}).pdf"
-        new_pdf_file = file_path / new_pdf_name
+        new_pdf_file = file_dir / new_pdf_name
         os.rename(pdf_file, new_pdf_file)
